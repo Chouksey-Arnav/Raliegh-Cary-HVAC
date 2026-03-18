@@ -1,1 +1,1040 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>Raleigh Cary HVAC &amp; Refrigeration | (919) 525-4323 | Cary, Apex &amp; Raleigh NC</title>
+<meta name="description" content="Wake County's #1 rated HVAC contractor. Call (919) 525-4323 for 24/7 emergency AC repair, heating service &amp; commercial refrigeration in Cary, Apex &amp; Raleigh NC. Honest diagnostics. Zero upselling. 4.9 Stars · 71 Reviews."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#040E1C;--navy1:#071628;--navy2:#0A1E36;--navy3:#0D2645;
+  --blue:#1B50A0;--blue2:#2260BE;--bluel:#3A7DD9;
+  --ice:#EBF3FF;--ice2:#F4F8FF;
+  --fire:#E55A00;--fire2:#FF6B15;--amber:#F5A623;--gold:#F7C03E;
+  --white:#FFFFFF;--slate:#8497B0;--slatel:#BAC9DC;
+  --body:#1C2B3D;--border:#DDE6F2;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--white);color:var(--body);overflow-x:hidden;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer}
+
+@keyframes pulseCTA{0%,100%{box-shadow:0 0 0 0 rgba(229,90,0,.5),0 8px 32px rgba(229,90,0,.3)}60%{box-shadow:0 0 0 12px rgba(229,90,0,0),0 8px 32px rgba(229,90,0,.3)}}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.rv.on{opacity:1;transform:none}
+.rv-s{opacity:0;transform:scale(.93);transition:opacity .65s ease,transform .65s ease}
+.rv-s.on{opacity:1;transform:none}
+.rv-l{opacity:0;transform:translateX(-32px);transition:opacity .7s ease,transform .7s ease}
+.rv-l.on{opacity:1;transform:none}
+.rv-r{opacity:0;transform:translateX(32px);transition:opacity .7s ease,transform .7s ease}
+.rv-r.on{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+.d4{transition-delay:.32s}.d5{transition-delay:.40s}
+
+/* LAYOUT */
+.wrap{width:min(1200px,93vw);margin-inline:auto}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.85rem 1.8rem;border-radius:1.25rem;font-family:'Syne',sans-serif;font-size:.88rem;font-weight:700;letter-spacing:.04em;border:none;cursor:pointer;transition:all .25s cubic-bezier(.22,1,.36,1);white-space:nowrap}
+.btn-fire{background:linear-gradient(135deg,var(--fire),var(--fire2));color:var(--white);box-shadow:0 6px 24px rgba(229,90,0,.35);animation:pulseCTA 3s ease infinite}
+.btn-fire:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 12px 40px rgba(229,90,0,.5)}
+.btn-glass{background:rgba(255,255,255,.07);color:var(--white);border:1.5px solid rgba(255,255,255,.18);backdrop-filter:blur(12px)}
+.btn-glass:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.38);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--fire);border:2px solid var(--fire)}
+.btn-outline:hover{background:var(--fire);color:var(--white);transform:translateY(-2px);box-shadow:0 8px 28px rgba(229,90,0,.3)}
+.btn-lg{font-size:1rem;padding:1.1rem 2.4rem}
+
+/* LABEL TAG */
+.label-tag{font-family:'Syne',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--fire);display:inline-flex;align-items:center;gap:.4rem;margin-bottom:.9rem}
+.label-tag::before{content:'';width:20px;height:2px;background:var(--fire);flex-shrink:0}
+.label-tag.gold-tag{color:var(--gold)}
+.label-tag.gold-tag::before{background:var(--gold)}
+
+/* HEADER */
+#hdr{position:fixed;top:0;inset-x:0;z-index:1000;transition:all .3s ease}
+#hdr.solid{background:rgba(4,14,28,.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);box-shadow:0 4px 32px rgba(0,0,0,.35)}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;gap:1rem}
+.logo-wrap{display:flex;align-items:center;gap:.75rem}
+.logo-icon{width:42px;height:42px;border-radius:10px;flex-shrink:0;background:linear-gradient(135deg,var(--fire),var(--fire2));display:grid;place-items:center;font-size:1.3rem;box-shadow:0 4px 14px rgba(229,90,0,.4)}
+.logo-name{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;color:var(--white);letter-spacing:.02em;line-height:1.1}
+.logo-sub{font-size:.6rem;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase}
+.hdr-nav{display:flex;align-items:center;gap:.1rem}
+.hdr-nav a{font-family:'Syne',sans-serif;font-size:.78rem;font-weight:600;color:rgba(255,255,255,.65);padding:.5rem .95rem;border-radius:.5rem;letter-spacing:.05em;text-transform:uppercase;transition:color .2s,background .2s}
+.hdr-nav a:hover{color:var(--white);background:rgba(255,255,255,.07)}
+.hdr-ctas{display:flex;align-items:center;gap:.65rem}
+.hdr-phone{display:flex;align-items:center;gap:.45rem;font-family:'Syne',sans-serif;font-size:.85rem;font-weight:700;color:var(--white);padding:.55rem 1.1rem;border-radius:.6rem;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);transition:all .2s}
+.hdr-phone:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25)}
+.hdr-emg{font-family:'Syne',sans-serif;font-size:.78rem;font-weight:700;background:linear-gradient(135deg,var(--fire),var(--fire2));color:var(--white);padding:.6rem 1.2rem;border-radius:.6rem;animation:pulseCTA 2.5s ease infinite;letter-spacing:.03em;display:flex;align-items:center;gap:.4rem}
+.hdr-emg:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(229,90,0,.5)}
+
+/* HAMBURGER */
+.hmb{display:none;background:none;border:none;padding:.5rem;flex-direction:column;gap:5px}
+.hmb-line{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;transition:all .28s ease;transform-origin:center}
+.hmb.open .hmb-line:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hmb.open .hmb-line:nth-child(2){opacity:0;transform:scaleX(0)}
+.hmb.open .hmb-line:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* MOBILE NAV */
+#mob-nav{display:none;flex-direction:column;background:rgba(4,14,28,.98);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,.07);padding:1.25rem 0 1.5rem}
+#mob-nav.open{display:flex}
+.mob-link{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:600;color:rgba(255,255,255,.75);padding:.8rem 1.25rem;letter-spacing:.04em;text-transform:uppercase;transition:color .2s,background .2s;border-radius:.5rem;margin:0 .25rem}
+.mob-link:hover{color:var(--white);background:rgba(255,255,255,.06)}
+.mob-phone-row{display:flex;flex-direction:column;gap:.5rem;padding:1rem 1.25rem .5rem;margin-top:.5rem;border-top:1px solid rgba(255,255,255,.07)}
+.mob-num{text-align:center;font-size:1.1rem;font-weight:700;color:var(--white);letter-spacing:.04em;padding:.25rem;font-family:'Syne',sans-serif}
+.mob-call-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:1rem;border-radius:.75rem;font-weight:700;font-family:'Syne',sans-serif;font-size:.95rem;background:linear-gradient(135deg,var(--fire),var(--fire2));color:var(--white);border:none;cursor:pointer;box-shadow:0 6px 20px rgba(229,90,0,.4)}
+
+/* HERO */
+#hero{position:relative;min-height:100svh;background:var(--navy);display:flex;align-items:center;padding:8rem 0 5rem;overflow:hidden}
+.h-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(27,80,160,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(27,80,160,.12) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 85% 80% at 60% 50%,black 20%,transparent 100%)}
+.h-glow{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px)}
+.h-g1{width:650px;height:650px;background:radial-gradient(circle,rgba(27,80,160,.4) 0%,transparent 70%);top:-150px;right:-100px}
+.h-g2{width:400px;height:400px;background:radial-gradient(circle,rgba(229,90,0,.18) 0%,transparent 70%);bottom:-80px;left:-80px}
+.hero-layout{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+.h-badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(247,192,62,.1);border:1px solid rgba(247,192,62,.22);border-radius:100px;padding:.5rem 1.1rem;font-family:'Syne',sans-serif;font-size:.73rem;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.5rem;animation:floatY 4s ease-in-out infinite}
+.h-stars{color:var(--gold);letter-spacing:.05em}
+.hero-h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(3.2rem,6vw,5.8rem);font-weight:700;line-height:.92;color:var(--white);letter-spacing:-.02em;margin-bottom:1.5rem}
+.hero-h1 em{color:var(--fire2);font-style:normal;display:block}
+.hero-h1 .thin{font-weight:300;font-style:italic;color:rgba(255,255,255,.6);font-size:.8em}
+.hero-desc{font-size:1.05rem;color:rgba(255,255,255,.6);max-width:500px;line-height:1.75;margin-bottom:2.25rem}
+.hero-desc strong{color:rgba(255,255,255,.9);font-weight:600}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.hero-trust{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap}
+.ht-item{display:flex;align-items:center;gap:.4rem;font-size:.79rem;color:rgba(255,255,255,.5);font-weight:500}
+.ht-check{width:16px;height:16px;border-radius:50%;background:rgba(58,125,217,.25);display:grid;place-items:center;font-size:.55rem;color:var(--bluel);font-weight:900;flex-shrink:0}
+.ht-div{width:1px;height:14px;background:rgba(255,255,255,.12)}
+
+/* HERO CARD */
+.hero-card{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.1);border-radius:1.5rem;backdrop-filter:blur(16px);padding:2.25rem;box-shadow:0 24px 80px rgba(0,0,0,.3)}
+.hc-title{font-family:'Playfair Display',Georgia,serif;font-size:1.05rem;font-weight:600;color:var(--gold);margin-bottom:1.75rem;font-style:italic}
+.hc-stats{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-bottom:1.75rem}
+.hc-stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:.9rem;padding:1.2rem 1rem;text-align:center;transition:background .2s}
+.hc-stat:hover{background:rgba(27,80,160,.2)}
+.hc-num{font-family:'Playfair Display',Georgia,serif;font-size:2.6rem;font-weight:700;color:var(--white);line-height:1}
+.hc-num sup{font-size:1.3rem;color:var(--fire2);vertical-align:super}
+.hc-num span{font-size:1.5rem;color:var(--fire2)}
+.hc-lbl{font-size:.67rem;color:var(--slate);text-transform:uppercase;letter-spacing:.09em;margin-top:.35rem}
+.hc-review{background:rgba(27,80,160,.2);border:1px solid rgba(58,125,217,.3);border-radius:1rem;padding:1.25rem}
+.hc-r-stars{color:var(--gold);font-size:.88rem;letter-spacing:.06em;margin-bottom:.5rem}
+.hc-r-text{font-size:.85rem;color:rgba(255,255,255,.78);font-style:italic;line-height:1.65;margin-bottom:.85rem}
+.hc-r-author{font-family:'Syne',sans-serif;font-size:.73rem;font-weight:700;color:var(--gold);letter-spacing:.04em}
+.hc-divider{border:none;border-top:1.5px solid rgba(255,255,255,.07);margin:1.5rem 0}
+.hc-call{display:flex;align-items:center;gap:.85rem;background:rgba(229,90,0,.12);border:1px solid rgba(229,90,0,.25);border-radius:.9rem;padding:1rem 1.2rem;transition:background .2s,border-color .2s}
+.hc-call:hover{background:rgba(229,90,0,.2);border-color:rgba(229,90,0,.45)}
+.hc-call-icon{width:40px;height:40px;border-radius:.6rem;background:linear-gradient(135deg,var(--fire),var(--fire2));display:grid;place-items:center;font-size:1.1rem;flex-shrink:0;animation:breathe 3s ease infinite}
+.hc-call-lbl{font-size:.67rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.1em;font-weight:700}
+.hc-call-num{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;color:var(--white);letter-spacing:.04em}
+
+/* TICKER */
+#ticker{background:linear-gradient(135deg,var(--fire),var(--fire2));padding:.65rem 0;overflow:hidden}
+.ticker-track{display:flex;animation:ticker 28s linear infinite;width:max-content}
+.tick-item{display:flex;align-items:center;gap:.65rem;padding:0 2rem;white-space:nowrap;font-family:'Syne',sans-serif;font-size:.75rem;font-weight:700;color:var(--white);letter-spacing:.1em;text-transform:uppercase}
+.tick-dot{width:4px;height:4px;background:rgba(255,255,255,.45);border-radius:50%;flex-shrink:0}
+
+/* TRUST BAR */
+#trust{background:var(--ice2);padding:3.5rem 0;border-bottom:1px solid var(--border)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.trust-tile{background:var(--white);border:1px solid var(--border);border-radius:1.25rem;padding:1.5rem 1.25rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:.7rem;transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s;cursor:default}
+.trust-tile:hover{transform:translateY(-5px);box-shadow:0 16px 50px rgba(4,14,28,.1)}
+.tt-icon{width:54px;height:54px;border-radius:.9rem;display:grid;place-items:center;font-size:1.4rem}
+.tt-i-fire{background:rgba(229,90,0,.1)}
+.tt-i-blue{background:rgba(27,80,160,.1)}
+.tt-i-gold{background:rgba(247,192,62,.12)}
+.tt-title{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--body)}
+.tt-sub{font-size:.78rem;color:var(--slate);line-height:1.5}
+
+/* SECTION */
+.section{padding:6.5rem 0}
+.body-lead{font-size:1.05rem;color:var(--slate);line-height:1.75}
+
+/* SERVICES */
+#services{background:var(--white)}
+.svc-intro{text-align:center;max-width:640px;margin:0 auto 4.5rem}
+.svc-h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:700;color:var(--body);margin-bottom:.75rem;letter-spacing:-.02em}
+.svc-h2 em{color:var(--fire);font-style:normal}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.svc-card{border-radius:1.875rem;overflow:hidden;border:1.5px solid var(--border);background:var(--white);transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+.svc-card:hover{transform:translateY(-10px);box-shadow:0 24px 80px rgba(4,14,28,.14);border-color:rgba(27,80,160,.2)}
+.svc-top{height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.svc-top.cool{background:linear-gradient(150deg,#041530 0%,#0D2A6E 50%,#1B50A0 100%)}
+.svc-top.heat{background:linear-gradient(150deg,#1A0500 0%,#5C1900 50%,#B83000 100%)}
+.svc-top.comm{background:linear-gradient(150deg,#020B18 0%,#0A1E36 50%,#0E3566 100%)}
+.svc-emoji{font-size:4.5rem;position:relative;z-index:1;animation:floatY 4s ease-in-out infinite;filter:drop-shadow(0 8px 20px rgba(0,0,0,.5))}
+.svc-pill{position:absolute;top:.9rem;right:.9rem;z-index:1;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);border-radius:100px;color:var(--white);font-size:.65rem;font-weight:700;font-family:'Syne',sans-serif;letter-spacing:.07em;text-transform:uppercase;padding:.28rem .75rem}
+.svc-body{padding:1.9rem}
+.svc-name{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:800;color:var(--body);margin-bottom:.6rem}
+.svc-desc{font-size:.88rem;color:var(--slate);line-height:1.7;margin-bottom:1.4rem}
+.svc-list{list-style:none;display:flex;flex-direction:column;gap:.45rem;margin-bottom:1.5rem}
+.svc-list li{display:flex;align-items:flex-start;gap:.55rem;font-size:.84rem;color:var(--body);font-weight:500;line-height:1.45}
+.svc-check{width:18px;height:18px;border-radius:50%;flex-shrink:0;margin-top:.06rem;background:rgba(229,90,0,.1);display:grid;place-items:center;font-size:.6rem;color:var(--fire);font-weight:900}
+.svc-link{display:inline-flex;align-items:center;gap:.4rem;font-family:'Syne',sans-serif;font-size:.82rem;font-weight:700;color:var(--fire);letter-spacing:.03em;transition:gap .2s}
+.svc-link:hover{gap:.75rem}
+
+/* ABOUT */
+#about{background:var(--navy);position:relative;overflow:hidden;padding:7rem 0}
+.about-bg-word{position:absolute;right:-2rem;bottom:-1rem;font-family:'Playfair Display',Georgia,serif;font-size:20vw;font-weight:700;color:rgba(255,255,255,.018);user-select:none;pointer-events:none;letter-spacing:-.05em;line-height:1}
+.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;position:relative;z-index:1}
+.about-h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:var(--white);margin-bottom:1.25rem;letter-spacing:-.02em;line-height:1.05}
+.about-h2 .fire-span{color:var(--fire2)}
+.about-h2 .fade-span{color:rgba(255,255,255,.45);font-weight:300;font-style:italic;font-size:.82em}
+.about-p{font-size:.97rem;color:rgba(255,255,255,.58);line-height:1.85;margin-bottom:1.1rem}
+.about-p strong{color:rgba(255,255,255,.88);font-weight:600}
+
+/* VS TABLE */
+.vs-table{border-radius:1.25rem;overflow:hidden;margin:2.25rem 0}
+.vs-header-row{display:grid;grid-template-columns:1fr 1fr}
+.vs-head{padding:1.1rem 1.4rem}
+.vs-head.bad{background:#1A0808;border-bottom:1px solid rgba(180,40,40,.2);border-right:1px solid rgba(100,20,20,.3)}
+.vs-head.good{background:rgba(27,80,160,.2);border-bottom:1px solid rgba(27,80,160,.3)}
+.vs-head-label{font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:.4rem}
+.vs-head-label.bad-lbl{color:#E05050}
+.vs-head-label.good-lbl{color:var(--gold)}
+.vs-row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid rgba(255,255,255,.04)}
+.vs-row:last-child{border-bottom:none}
+.vs-cell{padding:.9rem 1.4rem;font-size:.82rem;display:flex;align-items:flex-start;gap:.5rem;line-height:1.5}
+.vs-cell.bad{background:rgba(26,8,8,.6);color:rgba(255,255,255,.55);border-right:1px solid rgba(100,20,20,.2)}
+.vs-cell.good{background:rgba(11,30,60,.6);color:rgba(255,255,255,.75)}
+.vs-icon{flex-shrink:0;font-size:.9rem;margin-top:.05rem}
+
+.a-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem}
+.a-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:1.25rem;padding:1.2rem .85rem;text-align:center;transition:background .2s}
+.a-stat:hover{background:rgba(27,80,160,.18)}
+.a-num{font-family:'Playfair Display',Georgia,serif;font-size:2.1rem;font-weight:700;color:var(--fire2);line-height:1}
+.a-lbl{font-size:.68rem;color:var(--slate);text-transform:uppercase;letter-spacing:.09em;margin-top:.3rem}
+
+/* FEAT CARDS */
+.feat{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.07);border-radius:1.25rem;padding:1.5rem;display:flex;gap:1.1rem;align-items:flex-start;transition:background .28s,border-color .28s;cursor:default;margin-bottom:1.1rem}
+.feat:last-child{margin-bottom:0}
+.feat:hover{background:rgba(27,80,160,.15);border-color:rgba(58,125,217,.3)}
+.feat-icon{width:44px;height:44px;border-radius:.75rem;flex-shrink:0;background:rgba(229,90,0,.12);display:grid;place-items:center;font-size:1.2rem}
+.feat-title{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.feat-desc{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.65}
+.feat-desc a{color:var(--fire2);font-weight:700}
+.bb-badge{display:flex;align-items:center;gap:1rem;background:rgba(27,80,160,.25);border:1.5px solid rgba(58,125,217,.3);border-radius:1.25rem;padding:1.2rem 1.5rem;margin-top:1.25rem}
+.bb-icon{font-size:1.7rem}
+.bb-title{font-family:'Syne',sans-serif;font-size:.82rem;font-weight:700;color:var(--white)}
+.bb-sub{font-size:.73rem;color:rgba(255,255,255,.45)}
+
+/* REVIEWS */
+#reviews{background:var(--ice2);overflow:hidden}
+.rev-hdr{text-align:center;max-width:680px;margin:0 auto 4rem}
+.rev-h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:var(--body);letter-spacing:-.02em}
+.rev-h2 em{color:var(--fire);font-style:normal}
+.score-row{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-bottom:.75rem}
+.big-stars{color:var(--gold);font-size:1.7rem;letter-spacing:.1em}
+.big-num{font-family:'Playfair Display',Georgia,serif;font-size:3.5rem;font-weight:700;color:var(--body);line-height:1}
+.review-count{font-size:.85rem;color:var(--slate);align-self:flex-end;padding-bottom:.6rem}
+.platforms{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:.85rem}
+.platform-pill{display:flex;align-items:center;gap:.4rem;background:var(--white);border:1px solid var(--border);border-radius:100px;padding:.35rem .9rem;font-size:.73rem;font-weight:600;color:var(--body)}
+
+/* CAROUSEL */
+.car-mask{overflow:hidden}
+.car-track{display:flex;gap:1.5rem;transition:transform .65s cubic-bezier(.22,1,.36,1);will-change:transform;padding:.5rem .25rem 1rem}
+.rev-card{flex:0 0 370px;background:var(--white);border:1.5px solid var(--border);border-radius:1.5rem;padding:2rem;position:relative;transition:box-shadow .3s,transform .3s,border-color .3s;user-select:none}
+.rev-card:hover{box-shadow:0 16px 56px rgba(4,14,28,.12);transform:translateY(-5px);border-color:rgba(229,90,0,.2)}
+.rc-stars{color:var(--gold);font-size:1rem;letter-spacing:.08em;margin-bottom:1.1rem}
+.rc-text{font-size:.92rem;color:var(--body);line-height:1.78;margin-bottom:1.5rem;position:relative;padding-left:1.5rem}
+.rc-text::before{content:'\201C';font-family:'Playfair Display',Georgia,serif;font-size:4rem;color:rgba(229,90,0,.12);position:absolute;left:-.2rem;top:-.7rem;line-height:1}
+.rc-foot{display:flex;align-items:center;gap:.85rem}
+.rc-av{width:42px;height:42px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--blue),var(--bluel));display:grid;place-items:center;font-family:'Syne',sans-serif;font-size:.82rem;font-weight:700;color:var(--white)}
+.rc-name{font-family:'Syne',sans-serif;font-size:.85rem;font-weight:700;color:var(--body)}
+.rc-verified{font-size:.7rem;color:var(--slate);display:flex;align-items:center;gap:.3rem;margin-top:.1rem}
+.rc-verified::before{content:'✓';color:#22C55E;font-weight:800}
+.rev-card.hot{border-color:rgba(229,90,0,.22);background:linear-gradient(145deg,rgba(229,90,0,.03),var(--white))}
+.rev-card.hot::after{content:'TOP REVIEW';position:absolute;top:.9rem;right:.9rem;font-family:'Syne',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;color:var(--fire);background:rgba(229,90,0,.1);padding:.2rem .6rem;border-radius:100px}
+.car-controls{display:flex;align-items:center;justify-content:center;gap:1.1rem;margin-top:2.25rem}
+.car-btn{width:46px;height:46px;border-radius:50%;border:2px solid var(--border);background:var(--white);cursor:pointer;font-size:1rem;display:grid;place-items:center;transition:all .22s;color:var(--body);box-shadow:0 2px 16px rgba(4,14,28,.08)}
+.car-btn:hover{background:var(--fire);border-color:var(--fire);color:var(--white);box-shadow:0 6px 20px rgba(229,90,0,.3)}
+.car-dots{display:flex;gap:.5rem;align-items:center}
+.c-dot{width:8px;height:8px;border-radius:50%;background:var(--slatel);cursor:pointer;transition:all .3s}
+.c-dot.on{background:var(--fire);width:22px;border-radius:4px}
+.car-hint{text-align:center;margin-top:1rem;font-size:.73rem;color:var(--slate)}
+
+/* PILL STRIP */
+.pill-strip{overflow:hidden;margin-top:3.5rem;position:relative}
+.pill-strip::before,.pill-strip::after{content:'';position:absolute;top:0;bottom:0;width:100px;z-index:2;pointer-events:none}
+.pill-strip::before{left:0;background:linear-gradient(90deg,var(--ice2),transparent)}
+.pill-strip::after{right:0;background:linear-gradient(270deg,var(--ice2),transparent)}
+.pill-inner{display:flex;gap:.9rem;animation:ticker 36s linear infinite;width:max-content}
+.pill{display:flex;align-items:center;gap:.45rem;flex-shrink:0;background:var(--white);border:1px solid var(--border);border-radius:100px;padding:.55rem 1.1rem;font-size:.78rem;font-weight:500;color:var(--body);white-space:nowrap}
+.pill .ps{color:var(--gold);font-size:.72rem}
+.pill .pa{font-family:'Syne',sans-serif;font-weight:700;color:var(--blue);font-size:.75rem}
+
+/* EMERGENCY */
+#emergency{padding:5rem 0;position:relative;overflow:hidden;background:var(--navy)}
+.emg-glow{position:absolute;pointer-events:none;width:600px;height:400px;background:radial-gradient(ellipse,rgba(229,90,0,.2) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%)}
+.emg-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+.emg-tag{color:var(--fire);font-size:.72rem;font-weight:700;font-family:'Syne',sans-serif;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.9rem;display:flex;align-items:center;gap:.4rem}
+.emg-tag::before{content:'';width:16px;height:2px;background:var(--fire)}
+.emg-h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1.05;margin-bottom:.75rem}
+.emg-sub{font-size:1rem;color:rgba(255,255,255,.6);max-width:560px;line-height:1.7}
+.emg-right{display:flex;flex-direction:column;gap:1rem;align-items:flex-end;flex-shrink:0}
+.emg-call-box{background:linear-gradient(135deg,var(--fire),var(--fire2));border-radius:1.25rem;padding:1.5rem 2.2rem;display:flex;flex-direction:column;align-items:center;gap:.3rem;box-shadow:0 16px 50px rgba(229,90,0,.4);transition:transform .25s,box-shadow .25s;text-align:center;text-decoration:none}
+.emg-call-box:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(229,90,0,.55)}
+.emg-call-lbl{font-family:'Syne',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.14em;color:rgba(255,255,255,.75);text-transform:uppercase}
+.emg-call-num{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:var(--white);letter-spacing:.04em}
+.emg-note{font-size:.75rem;color:rgba(255,255,255,.4);text-align:right}
+
+/* CONTACT BAR */
+#contact-bar{background:var(--ice2);padding:3.5rem 0;border-top:1px solid var(--border)}
+.contact-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.ct{background:var(--white);border:1px solid var(--border);border-radius:1.25rem;padding:1.5rem 1.25rem;display:flex;align-items:flex-start;gap:.85rem;transition:box-shadow .25s}
+.ct:hover{box-shadow:0 8px 40px rgba(4,14,28,.14)}
+.ct-icon{width:42px;height:42px;border-radius:.7rem;flex-shrink:0;display:grid;place-items:center;font-size:1.15rem;background:rgba(229,90,0,.08)}
+.ct-title{font-family:'Syne',sans-serif;font-size:.75rem;font-weight:700;color:var(--slate);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem}
+.ct-body{font-size:.85rem;color:var(--body);line-height:1.55;font-weight:500}
+.ct-body a{color:var(--fire);font-weight:700;font-size:.95rem}
+.ct-body a:hover{text-decoration:underline}
+
+/* AREAS */
+#areas{background:var(--navy2);padding:4.5rem 0}
+.areas-inner{display:flex;align-items:center;justify-content:space-between;gap:3rem;flex-wrap:wrap}
+.areas-h{font-family:'Playfair Display',Georgia,serif;font-size:2rem;font-weight:700;color:var(--white);line-height:1.05;margin-bottom:1.25rem}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem}
+.chip{display:flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:100px;color:rgba(255,255,255,.75);font-size:.8rem;font-weight:500;padding:.45rem 1rem;transition:background .2s,border-color .2s;cursor:default}
+.chip:hover{background:rgba(27,80,160,.3);border-color:rgba(58,125,217,.4)}
+.chip-pin{color:var(--fire);font-size:.75rem}
+.areas-btns{display:flex;flex-direction:column;gap:.9rem;align-items:flex-start;flex-shrink:0}
+
+/* FOOTER */
+#footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.05);padding:5rem 0 0}
+.footer-grid{display:grid;grid-template-columns:2.1fr 1fr 1fr 1.2fr;gap:3rem;padding-bottom:3.5rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.f-about{font-size:.85rem;color:rgba(255,255,255,.42);line-height:1.75;max-width:300px;margin:1.25rem 0}
+.f-rating{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:rgba(255,255,255,.5)}
+.f-rating .fs{color:var(--gold);font-size:.88rem}
+.f-col-title{font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:1.25rem}
+.f-links{display:flex;flex-direction:column;gap:.6rem}
+.f-links a{font-size:.84rem;color:rgba(255,255,255,.5);transition:color .2s;display:flex;align-items:center;gap:.4rem}
+.f-links a:hover{color:var(--white)}
+.f-ci{display:flex;align-items:flex-start;gap:.7rem;margin-bottom:.9rem}
+.f-ci-icon{color:var(--fire);font-size:.9rem;flex-shrink:0;margin-top:.15rem}
+.f-ci-text{font-size:.82rem;color:rgba(255,255,255,.52);line-height:1.55}
+.f-ci-text strong{color:rgba(255,255,255,.8);display:block;margin-bottom:.15rem}
+.f-ci-text a{color:var(--fire2);font-weight:700}
+.f-ci-text a:hover{text-decoration:underline}
+.footer-bottom{padding:1.75rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.fb-copy{font-size:.73rem;color:rgba(255,255,255,.28);line-height:1.6}
+.fb-badges{display:flex;gap:.5rem;flex-wrap:wrap}
+.fb-badge{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:.4rem;padding:.28rem .75rem;font-family:'Syne',sans-serif;font-size:.62rem;font-weight:700;color:rgba(255,255,255,.38);letter-spacing:.06em;text-transform:uppercase}
+
+/* BACK TO TOP */
+#btt{position:fixed;bottom:1.75rem;right:1.75rem;z-index:900;width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;background:linear-gradient(135deg,var(--fire),var(--fire2));color:var(--white);font-size:1.1rem;display:grid;place-items:center;box-shadow:0 6px 24px rgba(229,90,0,.45);opacity:0;transform:translateY(20px);transition:opacity .3s,transform .3s;pointer-events:none}
+#btt.show{opacity:1;transform:none;pointer-events:all}
+#btt:hover{transform:translateY(-3px)!important}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .hero-layout{grid-template-columns:1fr;gap:2.5rem}
+  .hero-card{display:none}
+  .about-layout{grid-template-columns:1fr;gap:3rem}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .trust-grid,.contact-tiles{grid-template-columns:1fr 1fr}
+  .emg-inner{grid-template-columns:1fr;gap:1.75rem}
+  .emg-right{align-items:flex-start}
+  .emg-note{text-align:left}
+}
+@media(max-width:900px){
+  .svc-grid{grid-template-columns:1fr}
+  .hdr-nav,.hdr-ctas{display:none}
+  .hmb{display:flex}
+  .section{padding:4.5rem 0}
+}
+@media(max-width:680px){
+  .trust-grid,.contact-tiles{grid-template-columns:1fr}
+  .hero-btns{flex-direction:column}
+  .btn{width:100%;justify-content:center}
+  .hero-trust{flex-direction:column;gap:.75rem;align-items:flex-start}
+  .ht-div{display:none}
+  .a-stats{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .areas-inner{flex-direction:column}
+  .areas-btns{align-items:stretch;width:100%}
+  .vs-header-row,.vs-row{grid-template-columns:1fr 1fr}
+  .rev-card{flex:0 0 300px}
+}
+@media(max-width:400px){
+  .a-stats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="wrap">
+    <div class="hdr-inner">
+      <a href="#hero" class="logo-wrap">
+        <div class="logo-icon">🌡</div>
+        <div>
+          <div class="logo-name">Raleigh Cary HVAC</div>
+          <div class="logo-sub">&amp; Refrigeration · Cary, NC</div>
+        </div>
+      </a>
+      <nav class="hdr-nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#areas">Areas</a>
+      </nav>
+      <div class="hdr-ctas">
+        <a href="tel:+19195254323" class="hdr-phone">
+          <span style="animation:breathe 2.5s ease infinite;display:inline-block">📞</span>
+          <span>(919) 525-4323</span>
+        </a>
+        <a href="tel:+19195254323" class="hdr-emg">⚡ Emergency Service</a>
+      </div>
+      <button class="hmb" id="hmb" aria-label="Open menu">
+        <span class="hmb-line"></span>
+        <span class="hmb-line"></span>
+        <span class="hmb-line"></span>
+      </button>
+    </div>
+    <nav id="mob-nav">
+      <a class="mob-link" href="#services" onclick="closeMob()">Services</a>
+      <a class="mob-link" href="#about" onclick="closeMob()">About Yassine</a>
+      <a class="mob-link" href="#reviews" onclick="closeMob()">Reviews</a>
+      <a class="mob-link" href="#areas" onclick="closeMob()">Service Areas</a>
+      <div class="mob-phone-row">
+        <div class="mob-num">📞 (919) 525-4323</div>
+        <a href="tel:+19195254323" class="mob-call-btn">⚡ Call 24/7 — Emergency Service</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="h-grid"></div>
+  <div class="h-glow h-g1"></div>
+  <div class="h-glow h-g2"></div>
+  <div class="wrap">
+    <div class="hero-layout">
+      <div>
+        <div class="h-badge">
+          <span class="h-stars">★★★★★</span>
+          <span>4.9 · 71 Google Reviews · Wake County NC</span>
+        </div>
+        <h1 class="hero-h1">
+          Honest<br>
+          <em>Diagnostics.</em>
+          <span class="thin">Zero upselling — ever.</span>
+        </h1>
+        <p class="hero-desc">
+          Wake County's most trusted, owner-operated HVAC contractor. When your AC dies in July or your furnace quits on a holiday, <strong>Yassine Elmachrouh answers personally</strong> — and fixes the real problem, not the most profitable one.
+        </p>
+        <div class="hero-btns">
+          <a href="tel:+19195254323" class="btn btn-fire btn-lg">⚡ Call (919) 525-4323 — 24/7</a>
+          <a href="#services" class="btn btn-glass btn-lg">Explore Services →</a>
+        </div>
+        <div class="hero-trust">
+          <div class="ht-item"><div class="ht-check">✓</div> Same-day service available</div>
+          <div class="ht-div"></div>
+          <div class="ht-item"><div class="ht-check">✓</div> Zero upselling — guaranteed</div>
+          <div class="ht-div"></div>
+          <div class="ht-item"><div class="ht-check">✓</div> Blue Book commercial verified</div>
+          <div class="ht-div"></div>
+          <div class="ht-item"><div class="ht-check">✓</div> 10+ years of mastery</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hc-title">Raleigh Cary HVAC at a glance</div>
+        <div class="hc-stats">
+          <div class="hc-stat"><div class="hc-num">4.9<sup>★</sup></div><div class="hc-lbl">Google Rating</div></div>
+          <div class="hc-stat"><div class="hc-num">71</div><div class="hc-lbl">5-Star Reviews</div></div>
+          <div class="hc-stat"><div class="hc-num">10<span>+</span></div><div class="hc-lbl">Years Experience</div></div>
+          <div class="hc-stat"><div class="hc-num">24<span>/7</span></div><div class="hc-lbl">Emergency Ready</div></div>
+        </div>
+        <div class="hc-review">
+          <div class="hc-r-stars">★★★★★</div>
+          <p class="hc-r-text">"Absolute lifesaver. Our AC went out in July and Yassine was here the exact same day. Fixed a simple part that another company told me meant I needed a whole new system. Cannot recommend enough."</p>
+          <div class="hc-r-author">— Sarah T. · Cary, NC · Verified Google Review</div>
+        </div>
+        <hr class="hc-divider"/>
+        <a href="tel:+19195254323" class="hc-call">
+          <div class="hc-call-icon">📞</div>
+          <div>
+            <div class="hc-call-lbl">Call Yassine directly — 24/7</div>
+            <div class="hc-call-num">(919) 525-4323</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div id="ticker">
+  <div class="ticker-track">
+    <div class="tick-item"><span class="tick-dot"></span>24/7 Emergency Service</div>
+    <div class="tick-item"><span class="tick-dot"></span>Cary · Apex · Raleigh NC</div>
+    <div class="tick-item"><span class="tick-dot"></span>Honest Diagnostics — Always</div>
+    <div class="tick-item"><span class="tick-dot"></span>4.9 Stars · 71 Verified Reviews</div>
+    <div class="tick-item"><span class="tick-dot"></span>Same-Day Service Available</div>
+    <div class="tick-item"><span class="tick-dot"></span>Blue Book Commercial ProView #1745184</div>
+    <div class="tick-item"><span class="tick-dot"></span>Holiday Emergency Rescues</div>
+    <div class="tick-item"><span class="tick-dot"></span>Zero Upselling — Our Policy</div>
+    <div class="tick-item"><span class="tick-dot"></span>Call (919) 525-4323 Anytime</div>
+    <div class="tick-item"><span class="tick-dot"></span>Owner-Operated by Yassine Elmachrouh</div>
+    <div class="tick-item"><span class="tick-dot"></span>24/7 Emergency Service</div>
+    <div class="tick-item"><span class="tick-dot"></span>Cary · Apex · Raleigh NC</div>
+    <div class="tick-item"><span class="tick-dot"></span>Honest Diagnostics — Always</div>
+    <div class="tick-item"><span class="tick-dot"></span>4.9 Stars · 71 Verified Reviews</div>
+    <div class="tick-item"><span class="tick-dot"></span>Same-Day Service Available</div>
+    <div class="tick-item"><span class="tick-dot"></span>Blue Book Commercial ProView #1745184</div>
+    <div class="tick-item"><span class="tick-dot"></span>Holiday Emergency Rescues</div>
+    <div class="tick-item"><span class="tick-dot"></span>Zero Upselling — Our Policy</div>
+    <div class="tick-item"><span class="tick-dot"></span>Call (919) 525-4323 Anytime</div>
+    <div class="tick-item"><span class="tick-dot"></span>Owner-Operated by Yassine Elmachrouh</div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<section id="trust">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-tile rv d1">
+        <div class="tt-icon tt-i-fire">⚡</div>
+        <div class="tt-title">True 24/7 Emergency</div>
+        <div class="tt-sub">Yassine personally answers after-hours calls. No call center. No voicemail. Call (919) 525-4323 any hour, any day.</div>
+      </div>
+      <div class="trust-tile rv d2">
+        <div class="tt-icon tt-i-blue">🎯</div>
+        <div class="tt-title">Zero Upsell Policy</div>
+        <div class="tt-sub">We diagnose what's actually broken and fix only that. Customers routinely save thousands compared to corporate HVAC chains.</div>
+      </div>
+      <div class="trust-tile rv d3">
+        <div class="tt-icon tt-i-gold">⭐</div>
+        <div class="tt-title">4.9 Stars — 71 Reviews</div>
+        <div class="tt-sub">4.9 out of 5 across 71 verified Google reviews from real Wake County homeowners and commercial clients.</div>
+      </div>
+      <div class="trust-tile rv d4">
+        <div class="tt-icon tt-i-blue">📋</div>
+        <div class="tt-title">Blue Book ProView Verified</div>
+        <div class="tt-sub">ProView ID 1745184 — fully vetted commercial subcontractor trusted by general contractors across the Triangle.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="svc-intro rv">
+      <div class="label-tag">What We Do</div>
+      <h2 class="svc-h2">Complete HVAC &amp; Refrigeration <em>Mastery</em></h2>
+      <p class="body-lead" style="margin-top:.75rem;max-width:580px;margin-inline:auto">From a single-family home in Apex to a commercial auto dealership on Capital Blvd in Raleigh — every job gets master-level attention, honest pricing, and work that holds up.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card">
+        <div class="svc-top cool">
+          <div class="svc-emoji">❄️</div>
+          <span class="svc-pill">Residential</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name">AC Repair &amp; Cooling</h3>
+          <p class="svc-desc">North Carolina summers hit hard. When your air conditioning fails, you need a same-day expert who fixes the actual problem — not the most expensive one. That's Yassine.</p>
+          <ul class="svc-list">
+            <li><div class="svc-check">✓</div>Full AC system diagnostics &amp; repair</li>
+            <li><div class="svc-check">✓</div>Refrigerant leak detection &amp; recharge</li>
+            <li><div class="svc-check">✓</div>Compressor &amp; capacitor replacement</li>
+            <li><div class="svc-check">✓</div>New AC installation — honest system sizing</li>
+            <li><div class="svc-check">✓</div>24/7 emergency AC calls, including holidays</li>
+          </ul>
+          <a href="tel:+19195254323" class="svc-link">Call (919) 525-4323 now</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top heat">
+          <div class="svc-emoji">🔥</div>
+          <span class="svc-pill">Residential</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name">Heating &amp; Furnace Repair</h3>
+          <p class="svc-desc">Before you spend thousands on a furnace replacement, get Yassine's diagnosis first. He's saved countless customers by finding a single bad sensor — the truth other companies hide.</p>
+          <ul class="svc-list">
+            <li><div class="svc-check">✓</div>Gas &amp; electric furnace diagnosis &amp; repair</li>
+            <li><div class="svc-check">✓</div>Heat pump troubleshooting &amp; service</li>
+            <li><div class="svc-check">✓</div>Ignitor, flame sensor &amp; control board replacement</li>
+            <li><div class="svc-check">✓</div>Emergency no-heat calls — nights &amp; weekends</li>
+            <li><div class="svc-check">✓</div>Honest heating system installation</li>
+          </ul>
+          <a href="tel:+19195254323" class="svc-link">Book a diagnostic call</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top comm">
+          <div class="svc-emoji">🧊</div>
+          <span class="svc-pill">Commercial</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name">Commercial HVAC &amp; Refrigeration</h3>
+          <p class="svc-desc">Blue Book ProView verified and trusted by auto dealerships, property managers, and restaurants across Raleigh. Yassine diagnoses commercial refrigeration issues in minutes that stump other companies for days.</p>
+          <ul class="svc-list">
+            <li><div class="svc-check">✓</div>Rooftop unit (RTU) installation &amp; repair</li>
+            <li><div class="svc-check">✓</div>Commercial refrigeration &amp; walk-in service</li>
+            <li><div class="svc-check">✓</div>Multi-zone &amp; VAV system service</li>
+            <li><div class="svc-check">✓</div>Preventive maintenance contracts</li>
+            <li><div class="svc-check">✓</div>GC subcontracting — Blue Book ID 1745184</li>
+          </ul>
+          <a href="tel:+19195254323" class="svc-link">Request a commercial quote</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- THE YASSINE DIFFERENCE -->
+<section id="about">
+  <div class="about-bg-word">HONEST</div>
+  <div class="wrap">
+    <div class="about-layout">
+      <div class="rv-l">
+        <div class="label-tag">The Yassine Difference</div>
+        <h2 class="about-h2">
+          Owner-Operated.<br>
+          <span class="fire-span">Radically Honest.</span><br>
+          <span class="fade-span">A decade of earned trust.</span>
+        </h2>
+        <p class="about-p">The Triangle's HVAC market has been quietly taken over by private-equity-backed corporations that train technicians like salespeople — with quotas, upsell bonuses, and pressure to recommend $10,000 system replacements on calls that should cost a few hundred dollars.</p>
+        <p class="about-p">Raleigh Cary HVAC &amp; Refrigeration is the antidote. Owner and master technician <strong>Yassine Elmachrouh</strong> built this business on one radical idea: just be completely honest. Diagnose the real problem, fix it surgically, and charge a fair price. No exceptions.</p>
+        <p class="about-p">You can reach him directly at <a href="tel:+19195254323" style="color:var(--fire2);font-weight:700;text-decoration:underline">(919) 525-4323</a> — and he answers every call personally.</p>
+        <div class="vs-table">
+          <div class="vs-header-row">
+            <div class="vs-head bad"><div class="vs-head-label bad-lbl">❌ Corporate HVAC Chains</div></div>
+            <div class="vs-head good"><div class="vs-head-label good-lbl">✓ Raleigh Cary HVAC</div></div>
+          </div>
+          <div class="vs-row">
+            <div class="vs-cell bad"><span class="vs-icon">✗</span>Technicians on sales quotas</div>
+            <div class="vs-cell good"><span class="vs-icon">✓</span>Owner answers your call personally</div>
+          </div>
+          <div class="vs-row">
+            <div class="vs-cell bad"><span class="vs-icon">✗</span>Pushes $10K replacements for $200 repairs</div>
+            <div class="vs-cell good"><span class="vs-icon">✓</span>Surgical fix — saves you thousands</div>
+          </div>
+          <div class="vs-row">
+            <div class="vs-cell bad"><span class="vs-icon">✗</span>Call center, not the tech who shows up</div>
+            <div class="vs-cell good"><span class="vs-icon">✓</span>Honest diagnosis, told to your face</div>
+          </div>
+          <div class="vs-row">
+            <div class="vs-cell bad"><span class="vs-icon">✗</span>"Emergency" = next business day</div>
+            <div class="vs-cell good"><span class="vs-icon">✓</span>Real 24/7 — including all holidays</div>
+          </div>
+        </div>
+        <div class="a-stats">
+          <div class="a-stat"><div class="a-num">10+</div><div class="a-lbl">Years Experience</div></div>
+          <div class="a-stat"><div class="a-num">4.9</div><div class="a-lbl">Star Rating</div></div>
+          <div class="a-stat"><div class="a-num">71</div><div class="a-lbl">5-Star Reviews</div></div>
+        </div>
+      </div>
+      <div class="rv-r">
+        <div class="feat">
+          <div class="feat-icon">🔍</div>
+          <div>
+            <div class="feat-title">The Tough Diagnostics Specialist</div>
+            <div class="feat-desc">When other companies give up and quote a new system, Yassine is the one who cracks the diagnosis. "Diagnosed a commercial refrigeration issue in minutes that two other companies couldn't figure out." — James R., verified Google review.</div>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">⚡</div>
+          <div>
+            <div class="feat-title">True 24/7 — Even on Holidays</div>
+            <div class="feat-desc">AC dead on July 4th with company coming? Furnace out Christmas Eve? Yassine answered a call at 9 PM on a Saturday and had the customer cooling before midnight. Call <a href="tel:+19195254323">(919) 525-4323</a> anytime.</div>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">💬</div>
+          <div>
+            <div class="feat-title">The Price He Quotes Is the Price You Pay</div>
+            <div class="feat-desc">No surprise line items, no upsell pressure, no "discovered" problems once work starts. Across Cary, Apex, and Raleigh, customers consistently call his pricing "fair," "reasonable," and "exactly what he quoted."</div>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">🏢</div>
+          <div>
+            <div class="feat-title">Commercial-Grade Expertise</div>
+            <div class="feat-desc">From Econo Auto Sales at 7324 Capital Blvd in Raleigh to multi-property management companies, Yassine's commercial refrigeration depth earned him Blue Book ProView verification — the trust signal general contractors depend on.</div>
+          </div>
+        </div>
+        <div class="bb-badge">
+          <div class="bb-icon">📋</div>
+          <div>
+            <div class="bb-title">Commercial Blue Book — ProView Verified</div>
+            <div class="bb-sub">ProView ID: 1745184 · thebluebook.com · Trusted by GCs Across Wake County</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WALL OF LOVE -->
+<section id="reviews" class="section">
+  <div class="wrap">
+    <div class="rev-hdr rv">
+      <div class="label-tag" style="justify-content:center">Wall of Love</div>
+      <div class="score-row">
+        <div class="big-stars">★★★★★</div>
+        <div class="big-num">4.9</div>
+        <div class="review-count">out of 5 · 71 verified reviews</div>
+      </div>
+      <h2 class="rev-h2">71 Neighbors. <em>71 Honest Stories.</em></h2>
+      <p class="body-lead" style="margin-top:.75rem">Real Wake County homeowners and business owners. Unfiltered, unsponsored, and unambiguous. Every single one of them calls Yassine.</p>
+      <div class="platforms">
+        <div class="platform-pill">🌐 Google Reviews</div>
+        <div class="platform-pill">🏠 HomeAdvisor</div>
+        <div class="platform-pill">📋 Blue Book</div>
+        <div class="platform-pill">📌 Nextdoor</div>
+      </div>
+    </div>
+
+    <div class="rv">
+      <div class="car-mask">
+        <div class="car-track" id="carTrack">
+          <div class="rev-card hot">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Yassine responded in a very timely manner, within 1.5hrs of my call, was very professional, diagnosed the problem quickly, added refrigerant and provided me a very honest assessment of the condition of my system. Strongly recommend and he will be my primary HVAC service provider going forward.</p>
+            <div class="rc-foot"><div class="rc-av">PH</div><div><div class="rc-name">Patrick Hayes</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Helped us with a dead 2nd floor AC unit, did the work in a rush over a holiday weekend. Candid and honest guy, gave good advice that wasn't about upselling us — it was about getting the best value and a good warranty. Very pleased with our experience.</p>
+            <div class="rc-foot"><div class="rc-av">IM</div><div><div class="rc-name">Irish McIntyre</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card hot">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">I called Mr. Yassin for a tough diagnosis and he came by right away on the same day. His diagnosis was on point and he gave a very detailed explanation. His pricing was reasonable and honest, and I would definitely call him for any jobs in the future!</p>
+            <div class="rc-foot"><div class="rc-av">CW</div><div><div class="rc-name">Chunge Wang</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Yassine and his team were amazing! He was prompt, professional, reasonably priced and did the work sooner than I thought would be possible. I will definitely do business with him again in the future. I was highly impressed!</p>
+            <div class="rc-foot"><div class="rc-av">CS</div><div><div class="rc-name">Cam S.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">They installed our AC Unit at Econo Auto Sales Raleigh, 7324 Capital Blvd. Everything went smoothly from start to finish. Great communication and professional installation. Great job Yaseen, thank you.</p>
+            <div class="rc-foot"><div class="rc-av">AA</div><div><div class="rc-name">A Az. — Econo Auto Sales, Raleigh NC</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card hot">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Absolute lifesaver. Our AC went out in July and Yassine was here the exact same day. Fixed a simple part that another company told me meant I needed a whole new system. Cannot recommend enough.</p>
+            <div class="rc-foot"><div class="rc-av">ST</div><div><div class="rc-name">Sarah T.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Honest, fast, and fair. It is so hard to find contractors you can trust these days, but Raleigh Cary HVAC is the real deal.</p>
+            <div class="rc-foot"><div class="rc-av">MD</div><div><div class="rc-name">Mark D.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card hot">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Yassine is a master at his craft. Diagnosed a commercial refrigeration issue for my business in minutes that two other companies couldn't figure out.</p>
+            <div class="rc-foot"><div class="rc-av">JR</div><div><div class="rc-name">James R.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card hot">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Called at 9 PM on a Saturday expecting an answering machine. Yassine answered, showed up, and had us cooling again before midnight. 10/10 service.</p>
+            <div class="rc-foot"><div class="rc-av">DW</div><div><div class="rc-name">David W.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">No pressure, no upselling, just great old-fashioned hard work. Raleigh Cary HVAC saved us thousands of dollars with a surgical repair.</p>
+            <div class="rc-foot"><div class="rc-av">EL</div><div><div class="rc-name">Emily L.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">The most professional HVAC contractor in Wake County. Showed up on time, wore shoe covers, explained everything clearly, and the price was exactly what he quoted.</p>
+            <div class="rc-foot"><div class="rc-av">TG</div><div><div class="rc-name">Thomas G.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card hot">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">We use them for all our commercial properties now. Reliable, fully licensed, and they never cut corners. Yassine's team is top tier.</p>
+            <div class="rc-foot"><div class="rc-av">CP</div><div><div class="rc-name">Capital Property Mgmt</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card hot">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Thought we needed a whole new furnace. Yassine came out, found a bad sensor, fixed it for a fraction of the cost, and left. He earned a customer for life today.</p>
+            <div class="rc-foot"><div class="rc-av">MB</div><div><div class="rc-name">Michael B.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Fastest emergency response in Cary. Don't bother calling the big companies with the radio ads — just call Yassine.</p>
+            <div class="rc-foot"><div class="rc-av">JK</div><div><div class="rc-name">Jessica K.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+          <div class="rev-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">Flawless installation of our new system. The crew was respectful, clean, and efficient. Best home service experience we've had in NC.</p>
+            <div class="rc-foot"><div class="rc-av">RV</div><div><div class="rc-name">Robert V.</div><div class="rc-verified">Verified Google Review</div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="car-controls">
+        <button class="car-btn" id="carPrev" aria-label="Previous reviews">&#8592;</button>
+        <div class="car-dots" id="carDots"></div>
+        <button class="car-btn" id="carNext" aria-label="Next reviews">&#8594;</button>
+      </div>
+      <div class="car-hint">Auto-scrolling every 3.6s &middot; Drag or swipe to navigate &middot; Hover to pause</div>
+    </div>
+
+    <div class="pill-strip">
+      <div class="pill-inner">
+        <div class="pill"><span class="ps">★★★★★</span><span>"Honest, fast, and fair."</span><span class="pa">— Mark D.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Here before midnight."</span><span class="pa">— David W.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Saved us thousands."</span><span class="pa">— Emily L.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Master at his craft."</span><span class="pa">— James R.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Price was exactly quoted."</span><span class="pa">— Thomas G.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Holiday weekend lifesaver."</span><span class="pa">— Irish McIntyre</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Didn't need a new system."</span><span class="pa">— Sarah T.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"All our commercial properties."</span><span class="pa">— Capital Property Mgmt</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Same day, on point."</span><span class="pa">— Chunge Wang</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Best NC home service."</span><span class="pa">— Robert V.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Bad sensor, not new furnace."</span><span class="pa">— Michael B.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Fastest emergency in Cary."</span><span class="pa">— Jessica K.</span></div>
+        <!-- duplicate for loop -->
+        <div class="pill"><span class="ps">★★★★★</span><span>"Honest, fast, and fair."</span><span class="pa">— Mark D.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Here before midnight."</span><span class="pa">— David W.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Saved us thousands."</span><span class="pa">— Emily L.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Master at his craft."</span><span class="pa">— James R.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Price was exactly quoted."</span><span class="pa">— Thomas G.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Holiday weekend lifesaver."</span><span class="pa">— Irish McIntyre</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Didn't need a new system."</span><span class="pa">— Sarah T.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"All our commercial properties."</span><span class="pa">— Capital Property Mgmt</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Same day, on point."</span><span class="pa">— Chunge Wang</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Best NC home service."</span><span class="pa">— Robert V.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Bad sensor, not new furnace."</span><span class="pa">— Michael B.</span></div>
+        <div class="pill"><span class="ps">★★★★★</span><span>"Fastest emergency in Cary."</span><span class="pa">— Jessica K.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY BAND -->
+<section id="emergency">
+  <div class="emg-glow"></div>
+  <div class="wrap">
+    <div class="emg-inner rv">
+      <div>
+        <div class="emg-tag">Emergency HVAC — Cary · Apex · Raleigh</div>
+        <h2 class="emg-h2">AC Out? Heat Failing?<br>We Come to You — Right Now.</h2>
+        <p class="emg-sub">Yassine Elmachrouh personally answers every emergency call — including 9 PM Saturdays, July 4th, Christmas Eve, and every holiday. Serving all of Wake County, NC, 24 hours a day, 365 days a year. No answering service. No hold music.</p>
+      </div>
+      <div class="emg-right">
+        <a href="tel:+19195254323" class="emg-call-box">
+          <div class="emg-call-lbl">📞 Call Yassine directly — 24/7</div>
+          <div class="emg-call-num">(919) 525-4323</div>
+        </a>
+        <div class="emg-note">No call center. No voicemail.<br>The owner answers — guaranteed.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT INFO BAR -->
+<section id="contact-bar">
+  <div class="wrap">
+    <div class="contact-tiles">
+      <div class="ct rv d1">
+        <div class="ct-icon">📞</div>
+        <div>
+          <div class="ct-title">24/7 Emergency Line</div>
+          <div class="ct-body"><a href="tel:+19195254323">(919) 525-4323</a><br><span style="font-size:.78rem;color:var(--slate)">Call Yassine directly — any hour</span></div>
+        </div>
+      </div>
+      <div class="ct rv d2">
+        <div class="ct-icon">✉️</div>
+        <div>
+          <div class="ct-title">Email</div>
+          <div class="ct-body"><a href="mailto:Raleighcaryhvac@gmail.com">Raleighcaryhvac@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="ct rv d3">
+        <div class="ct-icon">📍</div>
+        <div>
+          <div class="ct-title">Address</div>
+          <div class="ct-body">100 Hidden Rock Ct<br>Cary, NC 27513</div>
+        </div>
+      </div>
+      <div class="ct rv d4">
+        <div class="ct-icon">🕐</div>
+        <div>
+          <div class="ct-title">Hours</div>
+          <div class="ct-body">Mon–Fri: 7AM–5PM<br>Sat: 10AM–4PM<br><span style="color:var(--fire);font-weight:700">24/7 Emergency Dispatch</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<div id="areas">
+  <div class="wrap">
+    <div class="areas-inner rv">
+      <div>
+        <div class="label-tag gold-tag">Service Area</div>
+        <h2 class="areas-h">Proudly Serving All of<br>Wake County, NC</h2>
+        <div class="chips">
+          <span class="chip"><span class="chip-pin">📍</span> Cary, NC</span>
+          <span class="chip"><span class="chip-pin">📍</span> Apex, NC</span>
+          <span class="chip"><span class="chip-pin">📍</span> Raleigh, NC</span>
+          <span class="chip"><span class="chip-pin">📍</span> Morrisville, NC</span>
+          <span class="chip"><span class="chip-pin">📍</span> Holly Springs, NC</span>
+          <span class="chip"><span class="chip-pin">📍</span> Fuquay-Varina, NC</span>
+          <span class="chip"><span class="chip-pin">📍</span> Wake Forest, NC</span>
+          <span class="chip"><span class="chip-pin">📍</span> Garner, NC</span>
+          <span class="chip"><span class="chip-pin">📍</span> Greater Wake County</span>
+        </div>
+      </div>
+      <div class="areas-btns">
+        <a href="tel:+19195254323" class="btn btn-fire btn-lg">⚡ Call (919) 525-4323</a>
+        <a href="mailto:Raleighcaryhvac@gmail.com" class="btn btn-glass btn-lg">✉ Email Yassine</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#hero" class="logo-wrap">
+          <div class="logo-icon">🌡</div>
+          <div>
+            <div class="logo-name">Raleigh Cary HVAC</div>
+            <div class="logo-sub">&amp; Refrigeration · Cary, NC</div>
+          </div>
+        </a>
+        <p class="f-about">Wake County's most trusted, owner-operated HVAC contractor. Honest diagnostics, zero upselling, and real 24/7 emergency service. Owner Yassine Elmachrouh's personal commitment to every customer.</p>
+        <div class="f-rating"><span class="fs">★★★★★</span><span>4.9 Stars · 71 Verified Google Reviews</span></div>
+      </div>
+      <div>
+        <div class="f-col-title">Services</div>
+        <div class="f-links">
+          <a href="#services">→ AC Repair &amp; Cooling</a>
+          <a href="#services">→ Heating &amp; Furnace Repair</a>
+          <a href="#services">→ Commercial HVAC</a>
+          <a href="#services">→ Commercial Refrigeration</a>
+          <a href="#services">→ New System Installation</a>
+          <a href="#emergency">→ 24/7 Emergency Dispatch</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Service Areas</div>
+        <div class="f-links">
+          <a href="#areas">→ Cary, NC</a>
+          <a href="#areas">→ Apex, NC</a>
+          <a href="#areas">→ Raleigh, NC</a>
+          <a href="#areas">→ Morrisville, NC</a>
+          <a href="#areas">→ Holly Springs, NC</a>
+          <a href="#areas">→ Fuquay-Varina, NC</a>
+          <a href="#areas">→ Greater Wake County</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Contact</div>
+        <div class="f-ci">
+          <span class="f-ci-icon">📞</span>
+          <div class="f-ci-text"><strong>Phone — 24/7 Emergency</strong><a href="tel:+19195254323">(919) 525-4323</a></div>
+        </div>
+        <div class="f-ci">
+          <span class="f-ci-icon">✉️</span>
+          <div class="f-ci-text"><strong>Email</strong><a href="mailto:Raleighcaryhvac@gmail.com">Raleighcaryhvac@gmail.com</a></div>
+        </div>
+        <div class="f-ci">
+          <span class="f-ci-icon">📍</span>
+          <div class="f-ci-text"><strong>Address</strong>100 Hidden Rock Ct, Cary, NC 27513</div>
+        </div>
+        <div class="f-ci">
+          <span class="f-ci-icon">🕐</span>
+          <div class="f-ci-text"><strong>Hours</strong>Mon–Fri 7AM–5PM · Sat 10AM–4PM<br><span style="color:var(--fire2);font-weight:600">Sunday &amp; After-Hours: 24/7 Emergency</span></div>
+        </div>
+        <div class="f-ci">
+          <span class="f-ci-icon">📋</span>
+          <div class="f-ci-text"><strong>Commercial Blue Book</strong>ProView ID: 1745184</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="fb-copy">© 2025 Raleigh Cary HVAC &amp; Refrigeration · Yassine Elmachrouh, Owner<br>100 Hidden Rock Ct, Cary, NC 27513 · (919) 525-4323 · Raleighcaryhvac@gmail.com</div>
+      <div class="fb-badges">
+        <span class="fb-badge">Licensed &amp; Insured</span>
+        <span class="fb-badge">Blue Book Verified</span>
+        <span class="fb-badge">4.9★ Google</span>
+        <span class="fb-badge">Owner-Operated</span>
+        <span class="fb-badge">Cary NC</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
+
+<script>
+const hdr=document.getElementById('hdr'),btt=document.getElementById('btt');
+window.addEventListener('scroll',()=>{const y=window.scrollY;hdr.classList.toggle('solid',y>50);btt.classList.toggle('show',y>500)},{passive:true});
+
+const hmb=document.getElementById('hmb'),mob=document.getElementById('mob-nav');
+let mo=false;
+hmb.addEventListener('click',()=>{mo=!mo;hmb.classList.toggle('open',mo);mob.classList.toggle('open',mo)});
+function closeMob(){mo=false;hmb.classList.remove('open');mob.classList.remove('open')}
+document.addEventListener('click',e=>{if(mo&&!hmb.contains(e.target)&&!mob.contains(e.target))closeMob()});
+
+const rvEls=document.querySelectorAll('.rv,.rv-s,.rv-l,.rv-r');
+const rvObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');rvObs.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+rvEls.forEach(el=>rvObs.observe(el));
+
+const svcCards=document.querySelectorAll('.svc-card');
+const svcObs=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>{e.target.style.opacity='1';e.target.style.transform='translateY(0)'},i*130);svcObs.unobserve(e.target)}})},{threshold:.08});
+svcCards.forEach(c=>{c.style.opacity='0';c.style.transform='translateY(30px)';c.style.transition='opacity .65s ease,transform .65s ease';svcObs.observe(c)});
+
+const track=document.getElementById('carTrack'),dotsW=document.getElementById('carDots');
+const pBtn=document.getElementById('carPrev'),nBtn=document.getElementById('carNext');
+const cards=Array.from(track.querySelectorAll('.rev-card'));
+const N=cards.length;
+let cur=0,tmr=null,dragging=false,dx=0,sx=0;
+function vis(){const w=window.innerWidth;return w<500?1:w<800?2:3}
+function cw(){return cards[0]?cards[0].offsetWidth+24:394}
+function buildDots(){dotsW.innerHTML='';const p=Math.ceil(N/vis());for(let i=0;i<p;i++){const d=document.createElement('div');d.className='c-dot'+(i===0?' on':'');d.onclick=()=>{stop();goTo(i*vis());start()};dotsW.appendChild(d)}}
+function syncDots(){const p=Math.floor(cur/vis());dotsW.querySelectorAll('.c-dot').forEach((d,i)=>d.classList.toggle('on',i===p))}
+function goTo(idx){const max=N-vis();cur=Math.max(0,Math.min(idx,max));track.style.transform='translateX(-'+(cur*cw())+'px)';syncDots()}
+function goNext(){cur>=N-vis()?goTo(0):goTo(cur+1)}
+function goPrev(){goTo(cur-1)}
+function start(){clearInterval(tmr);tmr=setInterval(goNext,3600)}
+function stop(){clearInterval(tmr)}
+pBtn.onclick=()=>{stop();goPrev();start()};
+nBtn.onclick=()=>{stop();goNext();start()};
+track.addEventListener('mousedown',e=>{dragging=true;sx=e.clientX;track.style.transition='none';stop()});
+track.addEventListener('touchstart',e=>{dragging=true;sx=e.touches[0].clientX;track.style.transition='none';stop()},{passive:true});
+document.addEventListener('mousemove',e=>{if(dragging)dx=e.clientX-sx});
+document.addEventListener('touchmove',e=>{if(dragging)dx=e.touches[0].clientX-sx},{passive:true});
+function endDrag(){if(!dragging)return;dragging=false;track.style.transition='transform .65s cubic-bezier(.22,1,.36,1)';if(dx<-55)goNext();else if(dx>55)goPrev();else goTo(cur);dx=0;start()}
+document.addEventListener('mouseup',endDrag);
+document.addEventListener('touchend',endDrag);
+track.addEventListener('mouseenter',stop);
+track.addEventListener('mouseleave',start);
+window.addEventListener('resize',()=>{buildDots();goTo(cur)});
+buildDots();goTo(0);start();
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();const off=hdr.offsetHeight+10;window.scrollTo({top:t.getBoundingClientRect().top+scrollY-off,behavior:'smooth'});closeMob()}
+  })
+});
+</script>
+</body>
+</html>
